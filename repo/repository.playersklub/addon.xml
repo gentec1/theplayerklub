@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.playersklub" name="[COLOR red ]THE PLAYERS KLUB[/COLOR] Repository" version="0.1.4" provider-name="THEPLAYERSKLUB">
+    <addon id="repository.playersklub" name="[COLOR red ]THE PLAYERS KLUB[/COLOR] Repository" version="0.1.0" provider-name="THEPLAYERSKLUB">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
