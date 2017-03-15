@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="plugin.video.playklub"
-       name="[COLOR red]The[COLOR gold]Players Klub[/COLOR]"
-       version="1"
+       name="[COLOR gold].THE PLAYERS KLUB BETA[/COLOR]"
+       version="1.0"
        provider-name="players">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
