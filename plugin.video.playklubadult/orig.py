@@ -156,7 +156,7 @@ def wizard2 (O0O0O00OOO0OO0O00 ,O00000OO0O0OO00O0 ,OOOOOOOO0000OO0O0 ,O0OOO0000O
 def playXml (OOOO00000O0O0OO0O ):#line:169
         OOO0OOOOO00O00OO0 .executebuiltin ('PlayMedia(%s)'%OOOO00000O0O0OO0O )#line:170
 def wizard3 (O0O000O0OOOO000O0 ,OO0OO00OO0OO00OOO ):#line:172
-    OO0OO0OO00O00O0OO =OPEN_URL ('http://theplayersklub.us/vod/vods.xml').replace ('\n','').replace ('\r','')#line:173
+    OO0OO0OO00O00O0OO =OPEN_URL ('http://theplayersklub.us/vod/adult.xml').replace ('\n','').replace ('\r','')#line:173
     O0O000O00OO0O0000 =OOO000OOOO0O00O0O .compile ('<title>(.+?)</title><link>(.+?)</link><thumbnail>(.+?)</thumbnail><fanart>(.+?)</fanart>').findall (OO0OO0OO00O00O0OO )#line:174
     for O0OO00OO0O0OOOOOO ,OO0O0OO00O0OOOOOO ,O00OOOO00O0OO000O ,OO000OO00O0O00000 in O0O000O00OO0O0000 :#line:175
         addXMLMenu (O0OO00OO0O0OOOOOO ,OO0O0OO00O0OOOOOO ,13 ,O00OOOO00O0OO000O ,OO000OO00O0O00000 ,OO0OO00OO0OO00OOO )#line:176
