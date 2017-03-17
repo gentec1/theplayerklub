@@ -21,7 +21,7 @@
 
 <addon id="plugin.video.playklubadult"
        name="[COLOR gold].THE PLAYERS KLUB BETA adult version[/COLOR]"
-       version="1.1"
+       version="1.2"
        provider-name="players">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
