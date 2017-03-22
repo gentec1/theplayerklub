@@ -71,9 +71,8 @@ def peamenyy(params):
     if channels == 1 and orig.mode != 5:
        plugintools.log(pnimi+vod_channels("TG9naW4gU3VjY2Vzcw=="))
        plugintools.add_item( action=vod_channels("c2VjdXJpdHlfY2hlY2s="),  title="[COLOR gold][B][I]PLAYERS LIVE[/I][/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("bGl2ZXR2LnBuZw==")) , fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) , folder=True )
-       orig.AddDir('[COLOR deepskyblue][B]VOD MOVIES[/B][/COLOR]','ExtraMenu',5,orig.Images + 'movies.png',orig.Images + 'background.png')
-       orig.AddDir('[COLOR tomato][B]RETRO TV[/B][/COLOR]','TVShows',9,orig.Images + 'movi.png',orig.Images + 'background.png')
-       orig.AddDir('[COLOR violet][B]CATCH UP[/B][/COLOR]','Movies',8,orig.Images + 'movi.png',orig.Images + 'background.png')
+       orig.AddDir('[COLOR deepskyblue][B]VOD/RETRO/CATCH UP[/B][/COLOR]','ExtraMenu',5,orig.Images + 'movies.png',orig.Images + 'background.png')
+       orig.AddDir('[COLOR red][B]ADULT XXX[/B][/COLOR]','wizard3',10,orig.Images + 'movies.png',orig.Images + 'background.png')
        plugintools.addItem('[COLOR orange][B]Launch PVR[/B][/COLOR]','pvr',12,orig.Images + 'extras.png',orig.Images + 'background.png')
        orig.AddDir('[COLOR teal][B]Clear Cache[/B][/COLOR]','Clear Cache',7,orig.Images + 'clear.png')
        plugintools.add_item( action=vod_channels("bGljZW5zZV9jaGVjaw=="), title="[COLOR orangered][B][I]Settings[/I][/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("bG9nby5wbmc=")) , fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")), folder=False )
