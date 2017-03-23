@@ -19,39 +19,3 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.playklubadult"
-       name="[COLOR gold].THE PLAYERS KLUB BETA adult version[/COLOR]"
-       version="1.2"
-       provider-name="players">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Players Klub</summary>
-    <language>en</language>
-    <description lang="en">Players Klub - Live TV / PPV / Sports / Kids / Movies / Entertainment at an affordable price for all.</description>
-     <platform>all</platform>
-  </extension>
-</addon>
-
-    <addon id="repository.playersklub" name="[COLOR red ]THE PLAYERS KLUB[/COLOR] Repository" version="0.1.0" provider-name="THEPLAYERSKLUB">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="playersklub">
-            <info compressed="false">https://raw.githubusercontent.com/gentec1/theplayerklub/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/gentec1/theplayerklub/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.github.com/gentec1/theplayerklub/master/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Install My Addons</summary>
-            <description>Download and install addons THE PLAYERS KLUB</description>
-            <platform>all</platform>
-    </extension>
-</addon>
-</addons>
