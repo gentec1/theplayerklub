@@ -72,7 +72,7 @@ def peamenyy(params):
        plugintools.log(pnimi+vod_channels("TG9naW4gU3VjY2Vzcw=="))
        plugintools.add_item( action=vod_channels("c2VjdXJpdHlfY2hlY2s="),  title="[COLOR gold][B][I]PLAYERS LIVE[/I][/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("bGl2ZXR2LnBuZw==")) , fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) , folder=True )
        orig.AddDir('[COLOR deepskyblue][B]VOD/RETRO/CATCH UP[/B][/COLOR]','ExtraMenu',5,orig.Images + 'movies.png',orig.Images + 'background.png')
-       orig.AddDir('[COLOR red][B]ADULT XXX[/B][/COLOR]','wizard3',10,orig.Images + 'movies.png',orig.Images + 'background.png')
+       orig.AddDir('[COLOR red][B]RED LIGHT[/B][/COLOR]','wizard3',10,orig.Images + 'adt.png',orig.Images + 'background.png')
        plugintools.addItem('[COLOR orange][B]Launch PVR[/B][/COLOR]','pvr',12,orig.Images + 'extras.png',orig.Images + 'background.png')
        orig.AddDir('[COLOR teal][B]Clear Cache[/B][/COLOR]','Clear Cache',7,orig.Images + 'clear.png')
        plugintools.add_item( action=vod_channels("bGljZW5zZV9jaGVjaw=="), title="[COLOR orangered][B][I]Settings[/I][/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("bG9nby5wbmc=")) , fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")), folder=False )
@@ -108,7 +108,7 @@ def security_check(params):
     for channel in tree.findall(sync_data("Y2hhbm5lbA==")):
         kanalinimi = channel.find(get_live("dGl0bGU=")).text
         kanalinimi = base64.b64decode(kanalinimi)
-        a = 'XXX', 'Adult', 'Adults','ADULT','ADULTS','adult','adults','Porn','PORN','porn','Porn','xxx', '18+'
+        a = ''
         if showxxx == "false":
           if any(s in kanalinimi for s in a):
             return
@@ -163,7 +163,7 @@ def stream_video(params):
            kokku = nyyd+jargmine
         else:
            kokku = ""
-        a = 'XXX', 'Adult', 'Adults','ADULT','ADULTS','adult','adults','Porn','PORN','porn','Porn','xxx', '18+'
+        a = ''
         if vanemalukk == "true":
           if alreadyinput != True:
             if any(s in shou for s in a):
@@ -285,7 +285,7 @@ def execute_ainfo(params):
     plugintools.set_view( plugintools.LIST )
 def vanema_lukk(name):
         plugintools.log(pnimi+sync_data("UGFyZW50YWwgbG9jayA="))
-        a = 'XXX', 'Adult', 'Adults','ADULT','ADULTS','adult','adults','Porn','PORN','porn','Porn','xxx', '18+'
+        a = ''
         if any(s in name for s in a):
            xbmc.executebuiltin((u'XBMC.Notification("Parental-Lock", "Channels may contain adult content", 2000)'))
            text = plugintools.keyboard_input(default_text="", title=get_live("UGFyZW50YWwtTG9jazogUGxlYXNlIGVudGVyIHlvdXIgUGFyZW50YWwgQ29kZQ=="))
