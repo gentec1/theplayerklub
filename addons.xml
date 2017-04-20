@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.playklub"
        name="[COLOR gold].THE PLAYERS KLUB BETA[/COLOR]"
-       version="1.9"
+       version="2.0"
        provider-name="players">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
