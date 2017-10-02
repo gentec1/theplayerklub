@@ -1,1 +1,257 @@
-exec("import re;import base64");exec((lambda p,y:(lambda o,b,f:re.sub(o,b,f))(r"([0-9a-f]+)",lambda m:p(m,y),base64.b64decode("NTEgMTZhLDQ0LCBkNSwgMTRkICxiLCAyYywgNDEsIGQ2LCAxNTMsIDY1CjUxIDRlLDEwOSwxMDUsZDgsMTE1CjUxIGNmLCBhYgpmMSA0NiA1MSA0NiwgZWEKNTEgMTIxLCAxMDAKNTkgPSAnODIuOWYuMmEnCjUyID0gMmMuNTIoNTkpCmNkID0gMmMuNTIoN2U9JzgyLjlmLjJhJykKMTc5ID0gImE4PT0iCjI0PTE0ZC4xOCgyMihkNS4xNmNbMV0pLCAnMjQnKQoyNz0xNGQuMTgoMjIoZDUuMTZjWzFdKSwgJzI3JykKNzc9MTRkLjE4KDIyKGQ1LjE2Y1sxXSksICcxMDMnKQpiNj0xNGQuMTgoMjIoZDUuMTZjWzFdKSwgJzdhJykKNWY9MTRkLjE4KDIyKGQ1LjE2Y1sxXSksICdkZicpCjVhID0gIjU4Oi8vN2MuZjg6OTQvMTFkLmM3PzNhPSU4ZCY0OT0lOGQmM2I9MTViJjg2PTE1YyIlKDI0LDI3LCkKNzIgPSAiNTg6Ly83Yy5mODo5NC9lMi5jNz8zYT0lOGQmNDk9JThkIiUoMjQsMjcsKQplZCA9IDUyLmNhKCc2NicpLmM5KCJlMS04IikKYz00MS41ZChkNi42Ni5mYSgnYjM6Ly8xNTQnLCcxMWUnLDU5LCdlOC8nKSk7CjMzID0gZDYuNjYuZmEoNDEuNWQoImIzOi8vMTAxL2RjIiApLmM5KCJlMS04IiksIDU5KQo1NCBlOSBkNi42Ni4xMWMoMzMpOgoJZDYuZWYoMzMpCgkKMWIgMzcoMTY0KToKCTcwID0gNDQuYjIoMTY0KQoJNzAuNTMoJ2M1LWE2JywgJzdhJykKCTJiID0gNDQuYjAoNzApCgkxNmU9MmIuZWIoKQoJMmIuZDMoKQoJNDMgMTZlCgkKMWIgOTEoNzIpOgoJCTcwID0gNDQuYjIoMTY0KQoJCSM3MC41MygnYzUtYTYnICwgIjEzNSAxMGUiKQoJCTcwLjUzKCdjNS1hNicsICcxMTAvNS4wICgxMDcgMTdlIDYuMTsgMTcxOjExLjApIDE0MS9lZSAxMGEvMTEuMCcpCgkJMmIgPSA0NC5iMCg3MCkKCQkxNmU9MmIuZWIoKQoJCTJiLmQzKCkKCQk0MyAxNmUKCQkKMWIgOTYoKToKCQkyMCgnMTQ5IGFkJyw3MiwxLGMgKyAnMmQuMWYnKQoJCTIwKCdmZiAxNDYnLCcxNjQnLDIsYyArICdmZiAxNDYuMWYnKQoJCTIwKCc2MicsJzYyJyw4LGMgKyAnMTI4LjFmJykKCQkyMCgnNzEgKDExYiAxNTgpJywnMTE3Jyw5LGMgKyAnMTE0LjFmJykKCQkyMCgnYzQnLCdjNCcsNSxjICsgJzEyYy4xZicpCgkJMjAoJ2E0IGE3JywnYTQgYTcnLDcsYyArICcxMzguMWYnKQoJCTIwKCc5MCcsJzYzJyw0LGMgKyAnNjMuMWYnKQoKMWIgYzYoMTY0KToKCTk4ID0gNGUuOWEoNWEpCgkzNCAzMCAzYyA5ODoKCQkxNjggPSA0ZS40YigzMFsiNjQiXSkKCQkyMCgxNjggLDMwWyIxNjQiXSwgMywgNWIsIDI1PWExKQoJCQoxYiA2YigxNjQpOgoJCTE2ZSA9IDkxKDE2NCkKCQkyMz02NS4xNCgnIjNhIjoiKC4rPykiJykuZmIoMTZlKQoJCWMwPTY1LjE0KCciMTI3IjoiKC4rPykiJykuZmIoMTZlKQoJCTg1PTY1LjE0KCciZjIiOiIoLis/KSInKS5mYigxNmUpIAkKCQliZj02NS4xNCgnImNjIjoiKC4rPykiJykuZmIoMTZlKQoJCTg0PTY1LjE0KCciZDAiOiIoLis/KSInKS5mYigxNmUpCgkJYmU9NjUuMTQoJyI5ZSI6IiguKz8pIicpLmZiKDE2ZSkKCQliZD02NS4xNCgnImY3IjoiMSInKS5mYigxNmUpCgkJMzQgMTY0IDNjIDIzOgoJCQkJZignMTQ5IGFkIGNiJywnJywnJyxjICsnMmQuMWYnKQoJCQkJZignMjQ6ICAlOGQnJSgxNjQpLCcnLCcnLGMgKyAnMmQuMWYnKQoJCTM0IDE2NCAzYyBjMDoKCQkJCWYoJzEyYTogICU4ZCclKDE2NCksJycsJycsYyArICcyZC4xZicpCgkJMzQgMTY0IDNjIDg0OgoJCQkJYzEgPSA0Ni41ZShkNyg4NFswXSkpCgkJCQljMS45NSgnJTE2Yi0lMTdiLSVkICUxNzI6JTE3YzolMTY5JykKCQkJCWYoJzEwYzogICU4ZCclKGMxKSwnJywnJyxjICsnMmQuMWYnKQoJCTM0IDE2NCAzYyA4NToKCQkJCWMxID0gNDYuNWUoZDcoODVbMF0pKQoJCQkJYzEuOTUoJyUxNmItJTE3Yi0lZCAlMTcyOiUxN2M6JTE2OScpCgkJCQlmKCcxMDQ6ICAlOGQnJShjMSksJycsJycsYyArJzJkLjFmJykKCQkzNCAxNjQgM2MgYmY6CgkJCQlmKCcxMjQgN2Y6ICAlOGQnJSgxNjQpLCcnLCcnLGMgKycyZC4xZicpCgkJMzQgMTY0IDNjIGJlOgoJCQkJZignMTYwIDdmOiAgJThkJyUoMTY0KSwnJywnJyxjICsnMmQuMWYnKSAKCQkzNCAxNjQgM2MgYmQ6CgkJCQlmKCcxNDU6IDE1ZScsJycsJycsYyArJzJkLjFmJykKCQkgCjFiIGI1KDE2OCwgMTY0LCA1Yj00OCk6CgkJYmM9MTY4CgkJOTggPSA0ZS45YSg1YSkKCQkzNCAzMCAzYyA5ODoKCQkJMTY4ID0gNGUuNGIoMzBbIjY0Il0pCgkJCWJhPTMwWyIxNjQiXQoJCQk1NCBiYyAzYyAxNjg6CgkJCQkxNzggPSBiLjI2KDY2PWJhLCAxNzU9NWIpCgkJCQkxNzguMzIoM2I9IjRmIiwgMWM9eyAiNTAiOiAxNjggfSkKCQkJCTE0ZC41NSgyMihkNS4xNmNbMV0pLCAyZSwgMTc4KQoKMWIgYjEoMTY0KToKCWQ0ICctLS0gMTBkICJ7MH0iLiB7MX0nLjEzMSgxNjQsIDE2OCkKCTE3OCA9IGIuMjYoNjY9MTY0LCAxNzU9NWIpCgkxNzguMzIoM2I9IjRmIiwgMWM9eyAiNTAiOiAxNjggfSkKCTQxLjEyMygpLjE0OCgxNjQsMTc4PTE3OCkKCTQzIDE0ZC41NSgyMihkNS4xNmNbMV0pLCBhMSwgMTc4KQoJCjFiIGYoMTY4LDE2NCwxM2EsNWIpOgoJCWY0PWQ1LjE2Y1swXSsiPzE2ND0iKzE2YS5kMSgxNjQpKyImMTNhPSIrYTUoMTNhKSsiJjE2OD0iKzE2YS5kMSgxNjgpCgkJNjk9MmUKCQkyOD1iLjI2KDE2OCwgNDI9IjQwLjFmIiwgMTc1PTViKQoJCTI4LjMyKCAzYj0iNGYiLCAxYz17ICI1MCI6IDE2OCB9ICkKCQk2OT0xNGQuMWEoNmE9MjIoZDUuMTZjWzFdKSwxNjQ9ZjQsMTc4PTI4LDI1PTJlKQoJCQoxYiAyMCgxNjgsIDE2NCwgMTNhLCA1YiwgOGI9IiIsIDI1PTJlLCBjZT00OCk6CglmND1kNS4xNmNbMF0rIj8xNjQ9IisxNmEuZDEoMTY0KSsiJjEzYT0iK2E1KDEzYSkrIiYxNjg9IisxNmEuZDEoMTY4KSsiJjViPSIrMTZhLmQxKDViKSsiJjhiPSIrMTZhLmQxKDhiKQoJYT1kNS4xNmNbMF0rIj8xNjQ9NDgmMTNhPSIrYTUoMTNhKSsiJjE2OD0iKzE2YS5kMSgxNjgpKyImNWI9IisxNmEuZDEoNWIpKyImOGI9IisxNmEuZDEoOGIpCgkjZDQgMTY4LjE3NygnLVsxN2FdJywnJykuMTc3KCctWzE2Zl0nLCcnKS4xNzcoJ1szNiAxMTldJywnJykuMTc3KCdbLzM2XScsJycpLjE3NygnICgxN2YpJywnJykrJz0nK2EKCTI4ID0gYi4yNigxNjgsIDQyPTViLCAxNzU9NWIpCgkyOC4zMigzYj0iNGYiLCAxYz17ICI1MCI6IDE2OCwgImM4IjogOGJ9KQoJMjguNDUoJ2RlJywgJzkyJykKCTE0ZC4xYSg2YT0yMihkNS4xNmNbMV0pLCAxNjQ9ZjQsIDE3OD0yOCwgMjU9MmUpCjFiIDdkKCk6Cgk3OCA9IFtdCgk2YyA9IGQ1LjE2Y1syXQoJNTQgYTIoNmMpID49IDI6CgkJZSA9IGQ1LjE2Y1syXQoJCTVjID0gZS4xNzcoJz8nLCcnKQoJCTU0IChlW2EyKGUpLTFdID09ICcvJyk6CgkJCWUgPSBlWzA6YTIoZSktMl0KCQkzZCA9IDVjLmRkKCcmJykKCQk3OCA9IHt9CgkJMzQgMTZkIDNjIDEzZShhMigzZCkpOgoJCQkxZCA9IHt9CgkJCTFkID0gM2RbMTZkXS5kZCgnPScpCgkJCTU0IChhMigxZCkpID09IDI6CgkJCQk3OFsxZFswXS4xNDQoKV0gPSAxZFsxXQoJNDMgNzgKCQoxYiA3MygpOgoKCTJhID0gMmMuNTIoJzgyLjlmLjJhJykKCTNlID0gMmEuMTgoN2U9JzI0JykKCTNmID0gMmEuMTgoN2U9JzI3JykKCTc1ID0gJ3siNmUiOiIyLjAiLCAiOGEiOiI5MC45ZCIsICJlIjp7IjEwYiI6ImUwLjZmIiwgIjYwIjo5Mn0sIjdlIjoxfScKCWJiIAkgICA9ICd7IjZlIjoiMi4wIiwiOGEiOiJiOS40YSIsImUiOnsiYjQiOiJlNS43NiIsIjZmIjo5Mn0sIjdlIjoxfScKCTk3ICAgPSAneyI2ZSI6IjIuMCIsIjhhIjoiYjkuNGEiLCJlIjp7ImI0IjoiZTUuMTRiIiwiNmYiOjlifSwiN2UiOjF9JwoJOGYgICA9ICI1ODovLzdjLmY4Ojk0LzExZC5jNz8zYT0iICsgM2UgKyAiJjQ5PSIgKyAzZiArICImM2I9OGUmODY9MTRhIgoJYjcJID0gIjU4Oi8vN2MuZjg6OTQvMTNkLmM3PzNhPSIgKyAzZSArICImNDk9IiArIDNmICsgIiYzYj04ZSY4Nj0xNGEiCgoJNDEuMzEoNzUpCgk0MS4zMShiYikKCTQxLjMxKDk3KQoJCgk2MSA9IDJjLjUyKCdlNS43NicpCgk2MS4zOSg3ZT0nMTMyJywgNjA9OGYpCgk2MS4zOSg3ZT0nMTE4JywgNjA9YjcpCgk2MS4zOSg3ZT0nZmUnLCA2MD0iOWIiKQoJNjEuMzkoN2U9J2ZjJywgNjA9IjliIikKCTg3ID0gYi40YygpLjY5KCJbMzYgYTBdZTcgMTNmIDE1MlsvMzZdIiwnWzM2IGEwXTE3M1wnMTc0IDEyMiA5MyAxMDggMTU5IGVjIDEyNiBlNyAxMzlbLzM2XScsJyAnLCdbMzYgYTBdMTRmIGZkIDEyNiAxNjUgMTJkIDE0MCAxMDAgZWMgZjUgMTY3IDE0MyAxMzAgZTdbLzM2XScpCgkKCjFiIDgxKCk6Cgk0MS41NygnNTYoMTE2KScpCgkKMWIgNjgoKToKCWNkLmMyKCkKCTk2KCkJCjFiIDZkKCk6Cgk4NyA9IGIuNGMoKS4xMzcoJ2E0IDkzIGE3PycsICcxN2QgMTFmIDEzYiAxNGUgMTVkIDkzIDExMSAxMzYgNjkgMTMzIDE1YSAxMDIgOTMgMTEyIDE2MSBlNicsIDExMz0nMTI5JyxmOT0nMTc2JykKCTU0IDg3ID09IDE6CgkJY2YuZDkoKQoKMWIgYWUoMTY4LDE2NCwxM2EsNWIsMTc5LDhiLDFlPTJlLGFjPXt9KToKCQlmND1kNS4xNmNbMF0rIj8xNjQ9IisxNmEuZDEoMTY0KSsiJjEzYT0iK2E1KDEzYSkrIiYxNjg9IisxNmEuZDEoMTY4KSsiJjViPSIrMTZhLmQxKDViKSsiJjE3OT0iKzE2YS5kMSgxNzkpKyImOGI9IisxNmEuZDEoOGIpCgkJNjk9MmUKCQkyOD1iLjI2KDE2OCwgNDI9IjQwLjFmIiwgMTc1PTViKQoJCTI4LjMyKCAzYj0iNGYiLCAxYz17ICI1MCI6IDE2OCwgImM4IjogOGIgfSApCgkJMjguNDUoICI2NyIsIDE3OSApCgkJNTQgMWU6CgkJCTJmID0gW10KCQkJNTQgMWUgPT0gJzE2Myc6CgkJCQkyZi5jMygoJzEyYiBmMSAnKzc0KycgODgnLCdmMC44YyglOGQ/MTNhPTUmMTY4PSU4ZCknCgkJCQkJCQkJCSUoZDUuMTZjWzBdLCAxNmEuZDEoMTY4KSkpKQoJCQk1NCBlOSAxNjggM2MgMTY2OgoJCQkJMmYuYzMoKCcxNWYgZWMgJys3NCsnIDg4JywnZjAuOGMoJThkPzEzYT00JjE2OD0lOGQmMTY0PSU4ZCY1Yj0lOGQmZjY9JThkKScKCQkJCQkJICUoZDUuMTZjWzBdLCAxNmEuZDEoMTY4KSwgMTZhLmQxKDE2NCksIDE2YS5kMSg1YiksIDEzYSkpKQoJCQkyOC44MCgyZikKCQk2OT0xNGQuMWEoNmE9MjIoZDUuMTZjWzFdKSwxNjQ9ZjQsMTc4PTI4LDI1PWExKQoJCTQzIDY5CgkJMTRkLjE3KDIyKGQ1LjE2Y1sxXSkpCgkJCjFiIGFmKDE3OSw4Yik6Cgk1NCA3NyA9PSAnOTInOgoJCWI4ID0gYi40YygpLjEzNCgnZjMnLCBhYi4xNjIoNWYuMTFhKCdlMS04JykpLmU0KCksIDNiPWIuYTksIDEyMD1iLmEzKQoJCTU0IGU5IGI4OgoJCQliLjRjKCkuNjkoJ2RiJywgJzEwZiAyNycpCgkJN2I6CgkJCTQ3ID0gMzcoJzU4Oi8vMzUuMTJmL2UzL2RhL2RhLjg5JykuMTc3KCdcMTUwJywnJykuMTc3KCdcMTRjJywnJykgICM5OQoJCQkyMyA9IDY1LjE0KCc8Mzg+KC4rPyk8LzM4PjwxNmU+KC4rPyk8LzE2ZT48MTY+KC4rPyk8LzE2PjwxNzk+KC4rPyk8LzE3OT4nKS5mYig0NykKCQkJMzQgMTY4LDE2NCw1YiwxOSAzYyAyMzoKCQkJCTU0ICc4OScgM2MgMTY0OgoJCQkJCTEyNSgxNjgsMTY0LDE1LDViLDE5LDhiKQoJCQkJN2I6CgkJCQkJMTI1KDE2OCwxNjQsMTMsNWIsMTksOGIpCgk3YjoKCQliLjRjKCkuNjkoJ2RiJywgJzE0MiAxMDYgMTVhIDEyZSAxMWYgMTU3IGVjIDE0NyAxNTUgMTcwIDNjIDEzYyA2MycpCgkJMTRkLjE3KDIyKGQ1LjE2Y1sxXSkpCgkJCjFiIDEyNSgxNjgsMTY0LDEzYSw1YiwxNzksOGIsMWU9MmUsYWM9e30pOgoJCWY0PWQ1LjE2Y1swXSsiPzE2ND0iKzE2YS5kMSgxNjQpKyImMTNhPSIrYTUoMTNhKSsiJjE2OD0iKzE2YS5kMSgxNjgpKyImNWI9IisxNmEuZDEoNWIpKyImMTc5PSIrMTZhLmQxKDE3OSkrIiY4Yj0iKzE2YS5kMSg4YikKCQk2OT0yZQoJCTI4PWIuMjYoMTY4LCA0Mj0iNDAuMWYiLCAxNzU9NWIpCgkJMjguMzIoIDNiPSI0ZiIsIDFjPXsgIjUwIjogMTY4LCAiYzgiOiA4YiB9ICkKCQkyOC40NSggIjY3IiwgMTc5ICkKCQk2OT0xNGQuMWEoNmE9MjIoZDUuMTZjWzFdKSwxNjQ9ZjQsMTc4PTI4LDI1PTJlKQoJCTQzIDY5CgkJMTRkLjE3KDIyKGQ1LjE2Y1sxXSkpCgkJCgkJCjFiIDgzKDE3OSw4Yik6Cgk0NyA9IDM3KCc1ODovLzM1LjEyZi9lMy8xNTYuODknKS4xNzcoJ1wxNTAnLCcnKS4xNzcoJ1wxNGMnLCcnKSAgIzk5CgkyMyA9IDY1LjE0KCc8Mzg+KC4rPyk8LzM4PjwxNmU+KC4rPyk8LzE2ZT48MTY+KC4rPyk8LzE2PjwxNzk+KC4rPyk8LzE3OT4nKS5mYig0NykKCTM0IDE2OCwxNjQsNWIsMTkgM2MgMjM6CgkJNTQgJzg5JyAzYyAxNjQ6CgkJCTEyNSgxNjgsMTY0LDE1LDViLDE5LDhiKQoJCTdiOgoJCQkxMjUoMTY4LDE2NCwxMyw1YiwxOSw4YikKCTE0ZC4xNygyMihkNS4xNmNbMV0pKQoJCjFiIDYyKDE3OSw4YiwxZT0yZSwpOgoJNDcgPSAzNygnNTg6Ly8zNS4xMmYvZTMvMTUxLjg5JykuMTc3KCdcMTUwJywnJykuMTc3KCdcMTRjJywnJykgICM5OQoJMjMgPSA2NS4xNCgnPDM4PiguKz8pPC8zOD48MTZlPiguKz8pPC8xNmU+PDE2PiguKz8pPC8xNj48MTc5PiguKz8pPC8xNzk+JykuZmIoNDcpCgkzNCAxNjgsMTY0LDViLDE5LDhiIDNjIDIzOgoJCTEyNSgxNjgsMTY0LDEzLDViLDE5LDhiKQoJCQoxYiBhYSgxNjQsMTc5LDhiKToKCTQ3ID0gMzcoMTY0KS4xNzcoJ1wxNTAnLCcnKS4xNzcoJ1wxNGMnLCcnKSAgIzk5CgkyMyA9IDY1LjE0KCc8Mzg+KC4rPyk8LzM4PjwxNmU+KC4rPyk8LzE2ZT48MTY+KC4rPyk8LzE2PjwxNzk+KC4rPyk8LzE3OT4nKS5mYig0NykKCTM0IDE2OCwxNjQsNWIsMTkgM2MgMjM6CgkJNTQgJzg5JyAzYyAxNjQ6CgkJCTEyNSgxNjgsMTY0LDE1LDViLDE5LDhiKQoJCTdiOgoJCQkxMjUoMTY4LDE2NCwxMyw1YiwxOSw4YikKCTE0ZC4xNygyMihkNS4xNmNbMV0pKQkKCgkKMWIgNzEoMTc5LDhiKToKCTQxLjU3KCI1NihkMikiKQoKCmU9N2QoKQoxNjQ9NDgKMTY4PTQ4CjEzYT00OAo1Yj00OAo4Yj00OAoKOWM6MTY0ID0gMTZhLjI5KGVbIjE2NCJdKQo0ZDo3OQo5YzoxNjggPSAxNmEuMjkoZVsiMTY4Il0pCjRkOjc5CjljOjViID0gMTZhLjI5KGVbIjViIl0pCjRkOjc5CjljOjEzYSA9IDIyKGVbIjEzYSJdKQo0ZDo3OQo5Yzo4Yj0xNmEuMjkoZVsiOGIiXSkKNGQ6NzkKCjU0IDEzYSA9PSA3OgoJNmQoKQoyMSAxM2EgPT0gODoKCTYyKDE3OSw4YikKMjEgMTNhID09IDk6Cgk3MSgxNzksOGIpCjIxIDEzYSA9PSAxOgoJNmIoMTY0KQoyMSAxM2EgPT0gMjoKCWM2KDE2NCkKMjEgMTNhID09IDM6CgliNSgxNjgsIDE2NCwgNWIpCjIxIDEzYSA9PSA0OgoJNjgoKQoyMSAxM2EgPT0gNToKCTgzKDE3OSw4YikKMjEgMTNhID09IDY6CglhZSgxNjgsMTY0LDhiKQoyMSAxM2EgPT0gMTA6CglhZigxNzksOGIpCjIxIDEzYSA9PSAxMToKCTczKCkKMjEgMTNhID09IDE1OgoJYWEoMTY0LDE3OSw4YikKMjEgMTNhID09IDEyOgoJODEoKQoyMSAxM2EgPT0gMTM6CgliMSgxNjQp")))(lambda a,b:b[int("0x"+a.group(1),16)],"0|1|2|3|4|5|6|7|8|9|a|xbmcgui|Images|d|params|AddAccInfo|10|11|12|13|compile|15|thumbnail|endOfDirectory|getSetting|FanArt|addDirectoryItem|def|infoLabels|splitparams|showcontext|png|AddDir|elif|int|match|Username|isFolder|ListItem|Password|liz|unquote_plus|playklub|response|xbmcaddon|MyAcc|True|contextMenu|channel|executeJSONRPC|setInfo|addon_data_dir|for|theplayersklub|COLOR|OPEN_URL|title|setSetting|username|type|in|pairsofparams|username_text|password_text|DefaultFolder|xbmc|iconImage|return|urllib2|setProperty|datetime|OPEN|None|password|SetAddonEnabled|GetEncodeString|Dialog|except|common|Video|Title|import|Addon|add_header|if|setResolvedUrl|ActivateWindow|executebuiltin|http|AddonID|ServerURL|iconimage|cleanedparams|translatePath|fromtimestamp|parental_pass|value|moist|Movies|settings|display_name|re|path|Fanart_Image|OpenSettings|ok|handle|MyAccDetails|paramstring|Clear_Cache|jsonrpc|enabled|req|TVShows|AccLink|correctPVR|ADDON_NAME|jsonSetPVR|iptvsimple|show_adult|param|pass|vanemalukk|else|thepk|Get_Params|id|Connection|addContextMenuItems|LaunchPVR|plugin|ExtraMenu|match4|match2|output|choice|Favorites|xml|method|description|RunPlugin|s|m3u_plus|loginurl|Settings|Open_URL|true|your|2095|strftime|MainMenu|nulldemo|list|Spaf|m3u2list|false|try|SetSettingValue|max_connections|video|white|False|len|PASSWORD_VERIFY|Clear|str|Agent|Cache|ZmFuYXJ0LmpwZw|INPUT_PASSWORD|xmllist|hashlib|allinfo|Account|wizard2|wizard3|urlopen|playXml|Request|special|addonid|PlayUrl|Parental_Lock|EPGurl|result|Addons|stream|IPTVon|_NAME_|match6|match5|match3|match1|dt|openSettings|append|Extras|User|LiveTv|php|Plot|decode|getAddonInfo|Information|active_cons|ADDON|background|GoDev|created_at|quote_plus|favourites|close|print|sys|os|float|downloader|Wipe_Cache|adult|ERROR|addon_data|split|IsPlayable|vanemakood|pvrmanager|utf|panel_api|vod|hexdigest|pvr|incorrect|PVR|resources|not|timedelta|read|to|addonDir|20100101|makedirs|XBMC|from|exp_date|Parental|u|populate|fav_mode|is_trial|co|yeslabel|join|findall|epgCache|includes|m3uCache|Live|time|userdata|clicked|showxxx|Expires|zipfile|section|Windows|Players|xbmcvfs|Firefox|setting|Created|Playing|Browser|Invalid|Mozilla|account|details|nolabel|tvshows|extract|TVGuide|TVshows|epgUrl|yellow|encode|Coming|exists|get|addons|you|option|base64|copied|Player|Active|addXMLMenu|the|status|movies|Cancel|Status|Remove|extras|please|locked|us|launch|format|m3uUrl|button|input|Magic|after|yesno|cache|Guide|mode|still|addon|xmltv|range|SETUP|allow|Gecko|Adult|click|lower|Trial|TV|turn|play|My|ts|demo|r|xbmcplugin|cant|This|n|vods|DONE|json|home|this|main|need|Soon|club|is|m3u|hls|see|Yes|Add|Max|are|md5|fav|url|EPG|FAV|now|name|S|urllib|Y|argv|i|link|EU|on|rv|H|We|ve|thumbnailImage|OK|replace|listitem|fanart|US|m|M|If|NT|G".split("|")))
+import urllib,urllib2, sys, xbmcplugin ,xbmcgui, xbmcaddon, xbmc, os, json, re
+import common,xbmcvfs,zipfile,downloader,extract
+import GoDev, hashlib
+from datetime import datetime, timedelta
+import base64, time
+AddonID = 'plugin.video.playklub'
+Addon = xbmcaddon.Addon(AddonID)
+ADDON = xbmcaddon.Addon(id='plugin.video.playklub')
+fanart = "ZmFuYXJ0LmpwZw=="
+Username=xbmcplugin.getSetting(int(sys.argv[1]), 'Username')
+Password=xbmcplugin.getSetting(int(sys.argv[1]), 'Password')
+show_adult=xbmcplugin.getSetting(int(sys.argv[1]), 'showxxx')
+Parental_Lock=xbmcplugin.getSetting(int(sys.argv[1]), 'vanemalukk')
+parental_pass=xbmcplugin.getSetting(int(sys.argv[1]), 'vanemakood')
+ServerURL = "http://thepk.co:2086/get.php?username=%s&password=%s&type=m3u&output=hls"%(Username,Password,)
+AccLink = "http://thepk.co:2086/panel_api.php?username=%s&password=%s"%(Username,Password,)
+addonDir = Addon.getAddonInfo('path').decode("utf-8")
+Images=xbmc.translatePath(os.path.join('special://home','addons',AddonID,'resources/'));
+addon_data_dir = os.path.join(xbmc.translatePath("special://userdata/addon_data" ).decode("utf-8"), AddonID)
+if not os.path.exists(addon_data_dir):
+    os.makedirs(addon_data_dir)
+	
+def OPEN_URL(url):
+    req = urllib2.Request(url)
+    req.add_header('User-Agent', 'vanemalukk')
+    response = urllib2.urlopen(req)
+    link=response.read()
+    response.close()
+    return link
+	
+def Open_URL(AccLink):
+        req = urllib2.Request(url)
+        #req.add_header('User-Agent' , "Magic Browser")
+        req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/20100101 Firefox/11.0')
+        response = urllib2.urlopen(req)
+        link=response.read()
+        response.close()
+        return link
+		
+def MainMenu():
+        AddDir('My Account',AccLink,1,Images + 'MyAcc.png')
+        AddDir('Live TV','url',2,Images + 'Live TV.png')
+        AddDir('Movies','Movies',8,Images + 'movies.png')
+        AddDir('TVShows (Coming Soon)','TVshows',9,Images + 'tvshows.png')
+        AddDir('Extras','Extras',5,Images + 'extras.png')
+        AddDir('Clear Cache','Clear Cache',7,Images + 'cache.png')
+        AddDir('Settings','settings',4,Images + 'settings.png')
+
+def LiveTv(url):
+    list = common.m3u2list(ServerURL)
+    for channel in list:
+        name = common.GetEncodeString(channel["display_name"])
+        AddDir(name ,channel["url"], 3, iconimage, isFolder=False)
+		
+def MyAccDetails(url):
+        link = Open_URL(url)
+        match=re.compile('"username":"(.+?)"').findall(link)
+        match1=re.compile('"status":"(.+?)"').findall(link)
+        match2=re.compile('"exp_date":"(.+?)"').findall(link) 	
+        match3=re.compile('"active_cons":"(.+?)"').findall(link)
+        match4=re.compile('"created_at":"(.+?)"').findall(link)
+        match5=re.compile('"max_connections":"(.+?)"').findall(link)
+        match6=re.compile('"is_trial":"1"').findall(link)
+        for url in match:
+                AddAccInfo('My Account Information','','',Images +'MyAcc.png')
+                AddAccInfo('Username:  %s'%(url),'','',Images + 'MyAcc.png')
+        for url in match1:
+                AddAccInfo('Status:  %s'%(url),'','',Images + 'MyAcc.png')
+        for url in match4:
+                dt = datetime.fromtimestamp(float(match4[0]))
+                dt.strftime('%Y-%m-%d %H:%M:%S')
+                AddAccInfo('Created:  %s'%(dt),'','',Images +'MyAcc.png')
+        for url in match2:
+                dt = datetime.fromtimestamp(float(match2[0]))
+                dt.strftime('%Y-%m-%d %H:%M:%S')
+                AddAccInfo('Expires:  %s'%(dt),'','',Images +'MyAcc.png')
+        for url in match3:
+                AddAccInfo('Active Connection:  %s'%(url),'','',Images +'MyAcc.png')
+        for url in match5:
+                AddAccInfo('Max Connection:  %s'%(url),'','',Images +'MyAcc.png') 
+        for url in match6:
+                AddAccInfo('Trial: Yes','','',Images +'MyAcc.png')
+	     
+def PlayUrl(name, url, iconimage=None):
+        _NAME_=name
+        list = common.m3u2list(ServerURL)
+        for channel in list:
+            name = common.GetEncodeString(channel["display_name"])
+            stream=channel["url"]
+            if _NAME_ in name:
+                listitem = xbmcgui.ListItem(path=stream, thumbnailImage=iconimage)
+                listitem.setInfo(type="Video", infoLabels={ "Title": name })
+                xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, listitem)
+	
+def AddAccInfo(name,url,mode,iconimage):
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)
+        ok=True
+        liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
+        liz.setInfo( type="Video", infoLabels={ "Title": name } )
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+		
+def AddDir(name, url, mode, iconimage, description="", isFolder=True, background=None):
+    u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&description="+urllib.quote_plus(description)
+    a=sys.argv[0]+"?url=None&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&description="+urllib.quote_plus(description)
+    #print name.replace('-[US]','').replace('-[EU]','').replace('[COLOR yellow]','').replace('[/COLOR]','').replace(' (G)','')+'='+a
+    liz = xbmcgui.ListItem(name, iconImage=iconimage, thumbnailImage=iconimage)
+    liz.setInfo(type="Video", infoLabels={ "Title": name, "Plot": description})
+    liz.setProperty('IsPlayable', 'true')
+    xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=u, listitem=liz, isFolder=True)
+def Get_Params():
+    param = []
+    paramstring = sys.argv[2]
+    if len(paramstring) >= 2:
+        params = sys.argv[2]
+        cleanedparams = params.replace('?','')
+        if (params[len(params)-1] == '/'):
+            params = params[0:len(params)-2]
+        pairsofparams = cleanedparams.split('&')
+        param = {}
+        for i in range(len(pairsofparams)):
+            splitparams = {}
+            splitparams = pairsofparams[i].split('=')
+            if (len(splitparams)) == 2:
+                param[splitparams[0].lower()] = splitparams[1]
+    return param
+	
+def correctPVR():
+
+	playklub = xbmcaddon.Addon('plugin.video.playklub')
+	username_text = playklub.getSetting(id='Username')
+	password_text = playklub.getSetting(id='Password')
+	jsonSetPVR = '{"jsonrpc":"2.0", "method":"Settings.SetSettingValue", "params":{"setting":"pvrmanager.enabled", "value":true},"id":1}'
+	IPTVon 	   = '{"jsonrpc":"2.0","method":"Addons.SetAddonEnabled","params":{"addonid":"pvr.iptvsimple","enabled":true},"id":1}'
+	nulldemo   = '{"jsonrpc":"2.0","method":"Addons.SetAddonEnabled","params":{"addonid":"pvr.demo","enabled":false},"id":1}'
+	loginurl   = "http://thepk.co:2086/get.php?username=" + username_text + "&password=" + password_text + "&type=m3u_plus&output=ts"
+	EPGurl     = "http://thepk.co:2086/xmltv.php?username=" + username_text + "&password=" + password_text + "&type=m3u_plus&output=ts"
+
+	xbmc.executeJSONRPC(jsonSetPVR)
+	xbmc.executeJSONRPC(IPTVon)
+	xbmc.executeJSONRPC(nulldemo)
+	
+	moist = xbmcaddon.Addon('pvr.iptvsimple')
+	moist.setSetting(id='m3uUrl', value=loginurl)
+	moist.setSetting(id='epgUrl', value=EPGurl)
+	moist.setSetting(id='m3uCache', value="false")
+	moist.setSetting(id='epgCache', value="false")
+	choice = xbmcgui.Dialog().ok("[COLOR white]PVR SETUP DONE[/COLOR]",'[COLOR white]We\'ve copied your PlayersKlub to the PVR Guide[/COLOR]',' ','[COLOR white]This includes the EPG please allow time to populate now click launch PVR[/COLOR]')
+	
+
+def LaunchPVR():
+	xbmc.executebuiltin('ActivateWindow(TVGuide)')
+	
+def OpenSettings():
+    ADDON.openSettings()
+    MainMenu()	
+def Clear_Cache():
+    choice = xbmcgui.Dialog().yesno('Clear your Cache?', 'If you still cant see your account after ok button is clicked your details are incorrect', nolabel='Cancel',yeslabel='OK')
+    if choice == 1:
+        GoDev.Wipe_Cache()
+
+def wizard2(name,url,mode,iconimage,fanart,description,showcontext=True,allinfo={}):
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&fanart="+urllib.quote_plus(fanart)+"&description="+urllib.quote_plus(description)
+        ok=True
+        liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
+        liz.setInfo( type="Video", infoLabels={ "Title": name, "Plot": description } )
+        liz.setProperty( "Fanart_Image", fanart )
+        if showcontext:
+            contextMenu = []
+            if showcontext == 'fav':
+                contextMenu.append(('Remove from '+ADDON_NAME+' Favorites','XBMC.RunPlugin(%s?mode=5&name=%s)'
+                                    %(sys.argv[0], urllib.quote_plus(name))))
+            if not name in FAV:
+                contextMenu.append(('Add to '+ADDON_NAME+' Favorites','XBMC.RunPlugin(%s?mode=4&name=%s&url=%s&iconimage=%s&fav_mode=%s)'
+                         %(sys.argv[0], urllib.quote_plus(name), urllib.quote_plus(url), urllib.quote_plus(iconimage), mode)))
+            liz.addContextMenuItems(contextMenu)
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
+        return ok
+        xbmcplugin.endOfDirectory(int(sys.argv[1]))
+		
+def wizard3(fanart,description):
+	if show_adult == 'true':
+		result = xbmcgui.Dialog().input('Parental', hashlib.md5(parental_pass.encode('utf-8')).hexdigest(), type=xbmcgui.INPUT_PASSWORD, option=xbmcgui.PASSWORD_VERIFY)
+		if not result:
+			xbmcgui.Dialog().ok('ERROR', 'Invalid Password')
+		else:
+			OPEN = OPEN_URL('http://theplayersklub.us/vod/adult/adult.xml').replace('\n','').replace('\r','')  #Spaf
+			match = re.compile('<title>(.+?)</title><link>(.+?)</link><thumbnail>(.+?)</thumbnail><fanart>(.+?)</fanart>').findall(OPEN)
+			for name,url,iconimage,FanArt in match:
+				if 'xml' in url:
+					addXMLMenu(name,url,15,iconimage,FanArt,description)
+				else:
+					addXMLMenu(name,url,13,iconimage,FanArt,description)
+	else:
+		xbmcgui.Dialog().ok('ERROR', 'Adult section is locked you need to turn this on in addon settings')
+        xbmcplugin.endOfDirectory(int(sys.argv[1]))
+		
+def addXMLMenu(name,url,mode,iconimage,fanart,description,showcontext=True,allinfo={}):
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&fanart="+urllib.quote_plus(fanart)+"&description="+urllib.quote_plus(description)
+        ok=True
+        liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
+        liz.setInfo( type="Video", infoLabels={ "Title": name, "Plot": description } )
+        liz.setProperty( "Fanart_Image", fanart )
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+        return ok
+        xbmcplugin.endOfDirectory(int(sys.argv[1]))
+
+	
+def TVShows(fanart,description):
+    xbmc.executebuiltin("ActivateWindow(favourites)")
+
+
+params=Get_Params()
+url=None
+name=None
+mode=None
+iconimage=None
+description=None
+
+try:url = urllib.unquote_plus(params["url"])
+except:pass
+try:name = urllib.unquote_plus(params["name"])
+except:pass
+try:iconimage = urllib.unquote_plus(params["iconimage"])
+except:pass
+try:mode = int(params["mode"])
+except:pass
+try:description=urllib.unquote_plus(params["description"])
+except:pass
+
+if mode == 7:
+	Clear_Cache()
+elif mode == 8:
+	Movies()
+elif mode == 9:
+	TVShows(fanart,description)
+elif mode == 1:
+    MyAccDetails(url)
+elif mode == 2:
+    LiveTv(url)
+elif mode == 3:
+    PlayUrl(name, url, iconimage)
+elif mode == 4:
+	OpenSettings()
+elif mode == 5:
+	ExtraMenu(fanart,description)
+elif mode == 6:
+	wizard2(name,url,description)
+elif mode == 10:
+	wizard3(fanart,description)
+elif mode == 11:
+	correctPVR()
+elif mode == 15:
+	xmllist(url,fanart,description)
+elif mode == 12:
+	LaunchPVR()
+elif mode == 13:
+	playXml(url)
