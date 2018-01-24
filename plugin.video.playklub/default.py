@@ -262,7 +262,7 @@ def maintMenu(params):
 def security_check(params):
 	plugintools.add_item( action=vod_channels("VFZzZWFyY2g="),   title="[COLOR red][B]Search Shows on Now[/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("U2VhcmNoLWljb24ucG5n")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
 	plugintools.log(pnimi+sync_data("TGl2ZSBNZW51")+repr(params))
-	request = urllib2.Request(televisioonilink, headers={"Accept" : "application/xml","User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"})
+	request = urllib2.Request(televisioonilink, headers={"Accept" : "application/xml","User-Agent": "Players"})
 	u = urllib2.urlopen(request)
 	tree = ElementTree.parse(u)
 	rootElem = tree.getroot()
@@ -354,6 +354,7 @@ def stream_video(params):
         else:
            plugintools.add_item( action=sync_data("cnVuX2Nyb25qb2I="), title=shou , url=pony, thumbnail=os.path.join(LOAD_LIVE,vod_channels("YWxsY2hhbm5lbHMucG5n")) , plot=kokku, fanart=os.path.join(LOAD_LIVE,sync_data("dGhlYXRlci5qcGc=")) , extra="", isPlayable=True, folder=False )
     plugintools.set_view( plugintools.EPISODES )
+    xbmcplugin.addSortMethod(handle=int(sys.argv[1]), sortMethod=xbmcplugin.SORT_METHOD_TITLE)
 
 def Print(OuT):
 	HOME = xbmc.translatePath('special://home')
@@ -371,7 +372,7 @@ def detect_modification(params):
     plugintools.add_item( action=vod_channels("Vk9Ec2VhcmNo"),   title="[COLOR red][B]Search for VOD/TV SHOWS[/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("U2VhcmNoLWljb24ucG5n")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
     plugintools.add_item( action=vod_channels("UmVjZW50bHlBZGRlZA=="),   title="Recently Added" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("dm9kLnBuZw==")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
     plugintools.log(pnimi+vod_channels("Vk9EIE1lbnUg")+repr(params))
-    request = urllib2.Request(filmilink, headers={"Accept" : "application/xml","User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"})
+    request = urllib2.Request(filmilink, headers={"Accept" : "application/xml","User-Agent": "Players"})
     u = urllib2.urlopen(request)
     tree = ElementTree.parse(u)
     rootElem = tree.getroot()
@@ -385,7 +386,7 @@ def detect_modification(params):
 
 def open_url(url):
     try:
-        req = urllib2.Request(url,headers={"Accept" : "application/xml","User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"})
+        req = urllib2.Request(url,headers={"Accept" : "application/xml","User-Agent": "Players"})
         response = urllib2.urlopen(req)
         link=response.read()
         response.close()
@@ -468,7 +469,7 @@ def TVsearch(params):
 		searchterm=keyb.getText()
 		searchterm=string.capwords(searchterm)
 	else:quit()
-	request = urllib2.Request(SEARCH_LIST, headers={"Accept" : "application/xml","User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"})
+	request = urllib2.Request(SEARCH_LIST, headers={"Accept" : "application/xml","User-Agent": "Players"})
 	u = urllib2.urlopen(request)
 	tree = ElementTree.parse(u)
 	rootElem = tree.getroot()
@@ -511,7 +512,7 @@ def get_myaccount(params):
        pealkiri = params.get("title")
        vanema_lukk(pealkiri)
     purl = params.get("url")
-    request = urllib2.Request(purl, headers={"Accept" : "application/xml","User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"})
+    request = urllib2.Request(purl, headers={"Accept" : "application/xml","User-Agent": "Players"})
     u = urllib2.urlopen(request)
     tree = ElementTree.parse(u)
     rootElem = tree.getroot()
