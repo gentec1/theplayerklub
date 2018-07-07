@@ -370,9 +370,8 @@ def Print(OuT):
 
 def detect_modification(params):
     plugintools.add_item( action=vod_channels("Vk9Ec2VhcmNo"),   title="[COLOR red][B]Search for VOD/TV SHOWS[/B][/COLOR]" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("U2VhcmNoLWljb24ucG5n")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
-    plugintools.add_item( action=vod_channels("UmVjZW50bHlBZGRlZA=="),   title="Recently Added" , thumbnail=os.path.join(LOAD_LIVE,vod_channels("dm9kLnBuZw==")), fanart=os.path.join(LOAD_LIVE,vod_channels("YmFja2dyb3VuZC5wbmc=")) ,  folder=True )
     plugintools.log(pnimi+vod_channels("Vk9EIE1lbnUg")+repr(params))
-    request = urllib2.Request(filmilink, headers={"Accept" : "application/xml","User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36"})
+    request = urllib2.Request(filmilink, headers={"Accept" : "application/xml","User-Agent": "VLC/2.2.4 LibVLC/2.2.4"})
     u = urllib2.urlopen(request)
     tree = ElementTree.parse(u)
     rootElem = tree.getroot()
