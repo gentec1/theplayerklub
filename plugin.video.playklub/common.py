@@ -13,7 +13,7 @@ def OpenURL(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64
 	else:
 		req = urllib2.Request(url)
 	
-	req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/20100101 Firefox/11.0')
+	req.add_header('User-Agent', ' Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
 	for k, v in headers.items():
 		req.add_header(k, v)
 	
@@ -55,7 +55,7 @@ def KODI_VERSION():
 
 def OPEN_XML(url):
     req = urllib2.Request(url)
-    req.add_header('User-Agent', 'FabIPTV')
+    req.add_header('User-Agent', ' Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
     response = urllib2.urlopen(req)
     link=response.read()
     response.close()
@@ -63,7 +63,7 @@ def OPEN_XML(url):
 
 def OPEN_URL_NORMAL(url):
     req = urllib2.Request(url)
-    req.add_header('User-Agent', 'python-requests/2.9.1')
+    req.add_header('User-Agent', ' Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
     response = urllib2.urlopen(req)
     link=response.read()
     response.close()

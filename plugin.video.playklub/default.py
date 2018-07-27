@@ -13,7 +13,7 @@ SKIN_VIEW_FOR_MOVIES="515"
 addonDir = plugintools.get_runtime_path()
 global kontroll
 global EPGColour
-addon_id = "plugin.video.fabhosting"
+addon_id = "plugin.video.playklub"
 background = "YmFja2dyb3VuZC5wbmc=" 
 defaultlogo = "ZGVmYXVsdGxvZ28ucG5n" 
 hometheater = "aG9tZXRoZWF0ZXIuanBn"
@@ -23,7 +23,7 @@ addonxml = "YWRkb24ueG1s"
 addonpy = "ZGVmYXVsdC5weQ=="
 icon = "aWNvbi5wbmc="
 fanart = "ZmFuYXJ0LmpwZw=="
-supplier = "RmFiIElQVFY="
+supplier = "VFBL"
 ICON = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png')) 
 FANART = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'fanart.jpg')) 
 APKS = base64.b64decode("aHR0cDovL2ZhYmlwdHYuY29tL2Fwa3MvbmV3YXBrcy50eHQ=")
@@ -34,9 +34,9 @@ message = "VU5BVVRIT1JJWkVEIEVESVQgT0YgQURET04h"
 kasutajanimi=plugintools.get_setting("Username")
 salasona=plugintools.get_setting("Password")
 F1ICON = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'F1.png'))
-BASEURL = base64.b64decode("bmFkYQ==")
+BASEURL = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD1tM3U4")
 LOAD_LIVEchan = os.path.join( plugintools.get_runtime_path() , "resources" , "art/arch" )
-loginurl   = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD10cw==")%(lehekylg,pordinumber,kasutajanimi,salasona)
+loginurl   = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD1tM3U4")%(lehekylg,pordinumber,kasutajanimi,salasona)
 
 def run():
     global pnimi
@@ -635,16 +635,15 @@ def get_myaccount2(params):
 plugintools.set_view( plugintools.EPISODES )
 			   
 def run_cronjob(params):
-    kasutajanimi=plugintools.get_setting("Username")
-    salasona=plugintools.get_setting("Password")
-    lopplink = params.get("url")
-    if "http://"  not in lopplink: 
-        lopplink = get_live("aHR0cDovLyVzOiVzL2VuaWdtYS5waHAvbGl2ZS8lcy8lcy8lcw==")%(lehekylg,pordinumber,kasutajanimi,salasona,lopplink)
-        lopplink = lopplink[:-2]
-        lopplink = lopplink + "ts"
-    listitem = xbmcgui.ListItem(path=lopplink)
-    xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, listitem)
-
+    extend=plugintools.get_setting(vod_channels("ZXh0ZW5k"))
+    plugintools.log(pnimi+sync_data("UExBWV9MSVZF")+repr(params))
+    #if vanemalukk == "true":
+       #pealkiri = params.get(sync_data("dGl0bGU="))
+       #vanema_lukk(pealkiri)
+    lopplink = params.get(vod_channels("dXJs"))
+    lopplink = lopplink.replace('.ts','.%s'%extend)
+    plugintools.play_resolved_url( lopplink )
+	
 def sync_data(channel):
     video = base64.b64decode(channel)
     return video

@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.playklub" version="4.4" name="[COLOR gold]THE PLAYERS KLUB[/COLOR]" provider-name="Players Klub">
+<addon id="plugin.video.playklub" version="4.5" name="[COLOR gold]THE PLAYERS KLUB[/COLOR]" provider-name="Players Klub">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.addon.common" optional="true" />

@@ -29,7 +29,7 @@ lehekylg= base64.b64decode("aHR0cDovL3RoZXBrLmNv") #####
 pordinumber="2086"
 BASEURL = base64.b64decode("bmFkYQ==")
 AddonRes = xbmc.translatePath(os.path.join('special://home','addons',AddonID,'resources'))
-loginurl   = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD10cw==")%(lehekylg,pordinumber,Username,Password)
+loginurl   = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD1tM3U4")%(lehekylg,pordinumber,Username,Password)
 THE_DATE = time.strftime("%Y%m%d")
 now = datetime.now()
 try:
@@ -79,7 +79,7 @@ def PVRbeta(self):
 
 	f = open(BetaPVR, 'a')
 
-	UserList = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD10cw==")%(lehekylg,pordinumber,Username,Password)
+	UserList = base64.b64decode("JXM6JXMvZ2V0LnBocD91c2VybmFtZT0lcyZwYXNzd29yZD0lcyZ0eXBlPW0zdV9wbHVzJm91dHB1dD1tM3U4")%(lehekylg,pordinumber,Username,Password)
 	link = open_url(UserList).replace('\n','').replace('\r','&split&')
 	a,b = link.split('&split&#EXTINF:-1 tvg-id="" tvg-name="Absolute 80')
 	OutpuT = a.replace("&split&","\n").replace("#EXTM3U","#EXTM3U\n")
